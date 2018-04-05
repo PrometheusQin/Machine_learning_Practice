@@ -19,6 +19,7 @@ def loadDataSet(fileName):
         # 所以想要使用，只用将iterator 转换成list 即可， 比如 list(map()) 
         dataMat.append(fltLine)
     dataMat = np.array(dataMat)
+    fr.close()
     return dataMat
 
 def distEclud(vecA, vecB):
